@@ -8,6 +8,7 @@
 </head>
 <body>
   <div id="accordionGroup" class="accordion">
+    
     <h3>
       <button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="section1" id="accordion1id">
         <span class="accordion-title">
@@ -52,6 +53,42 @@
         </fieldset>
       </div>
     </div>
+
+    <h3>
+      <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="section2" id="accordion2id">
+        <span class="accordion-title">
+          Billing Address
+          <span class="accordion-icon"></span>
+        </span>
+      </button>
+    </h3>
+    <div id="section2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
+      <div>
+        <fieldset>
+          <p>
+            <label for="address-1">Address 1:</label>
+            <input type="text" name="Address-1" id="address-1">
+          </p>
+          <p>
+            <label for="address-2">Address 2:</label>
+            <input type="text" name="Address-2" id="address-2">
+          </p>
+          <p>
+            <label for="city">City:</label>
+            <input type="text" name="City" id="city">
+          </p>
+          <p>
+            <label for="zip-code">Zip Code:</label>
+            <input type="text" name="Zip-code" id="zip-code">
+          </p>
+        </fieldset>
+      </div>
+    </div>
+
+
+
+
+
   </div>
 </body>
 <link rel="stylesheet" href="./styles.css">
