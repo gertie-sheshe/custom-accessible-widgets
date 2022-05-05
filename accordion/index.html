@@ -10,15 +10,45 @@
   <div id="accordionGroup" class="accordion">
     <h3>
       <button type="button" aria-expanded="true" class="accordion-trigger" aria-controls="section1" id="accordion1id">
-        <span>
+        <span class="accordion-title">
           Personal Information
+          <span class="accordion-icon"></span>
         </span>
       </button>
     </h3>
     <div id="section1" role="region" class="accordion-panel" aria-labelledby="accordion1id">
       <div>
         <fieldset>
-          
+          <p>
+            <label for="name">
+              Name <span aria-hidden="true">*</span>:
+            </label>
+            <input id="name" type="text" value="" name="Name" required>
+          </p>
+          <p>
+            <label for="email">
+              Email <span aria-hidden="true">*</span>:
+            </label>
+            <input id="email" type="email" value="" name="Email" required>
+          </p>
+          <p>
+            <label for="phone">
+              Phone:
+            </label>
+            <input id="phone" name="Phone" type="text" required>
+          </p>
+          <p>
+            <label for="extension">Extension:</label>
+            <input id="extension" name="Extension" type="text" value="">
+          </p>
+          <p>
+            <label for="country">Country:</label>
+            <input id="country" name="Country" type="text" value="">
+          </p>
+          <p>
+            <label for="city">City/Province:</label>
+            <input id="city" name="City_Province" type="text" value="">
+          </p>
         </fieldset>
       </div>
     </div>
