@@ -46,4 +46,56 @@ const CarouselPreviousNext = function (node, options) {
 
   // save reference to setTimeout
   this.slideTimeout = null;
+
+  // PAUSE Button
+  let pauseBtn = document.querySelector(".carousel .controls button.rotation");
+
+  if (pauseBtn) {
+    this.pausePlayButtonNode = elem;
+    this.pausePlayButtonNode.addEventListener(
+      "click",
+      this.handlePausePlayButtonClick.bind(this)
+    );
+  }
+
+  // PREVIOUS Button
+  let prevBtn = document.querySelector(".carousel .controls button.previous");
+
+  if (prevBtn) {
+    this.previousButtonNode = prevBtn;
+    this.previousButtonNode.addEventListener(
+      "click",
+      this.handlePreviousButtonClick.bind(this)
+    );
+
+    this.previousButtonNode.addEventListener(
+      "focus",
+      this.handleFocusIn.bind(this)
+    );
+    this.previousButtonNode.addEventListener(
+      "blur",
+      this.handleFocusOut.bind(this)
+    );
+  }
+
+  // NEXT Button
+  let nextBtn = document.querySelector(".carousel .controls button.next");
+
+  if (nextBtn) {
+    this.nextButtonNode = nextBtn;
+    this.nextButtonNode.addEventListener(
+      "click",
+      this.handleNextButtonClick.bind(this)
+    );
+    this.nextButtonNode.addEventListener(
+      "focus",
+      this.handleFocusIn.bind(this)
+    );
+    this.nextButtonNode.addEventListener(
+      "blur",
+      this.handleFocusOut.bind(this)
+    );
+  }
+
+  // Carousel Item Events
 };
